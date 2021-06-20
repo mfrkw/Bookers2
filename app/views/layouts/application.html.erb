@@ -13,8 +13,8 @@
     <% if user_signed_in? %>
       <%= link_to "log out", destroy_user_session_path, method: :delete %>
       <%= link_to 'Users', user_path(current_user.id) %>
-      <%= link_to "Books" %>
-      <%= link_to "Home" 
+      <%= link_to "Books",index_path %>
+      <%= link_to "Home", 
     <% else %>
       <%= link_to "sign up", new_user_registration_path %><br/>
       <%= link_to "log in", new_user_session_path %>
